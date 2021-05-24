@@ -13,7 +13,7 @@ function loadheaderexecute(level) {
         var registration = "Registration.html";
 
 
-        var OrganizeTeam = "committee.html"
+        var OrganizeTeam = "team/committee.html"
         var ProgramTeam = "team/program-committee.html"
         var VenueSchool = "venue/school-location.html"
         var VenueZJU = "venue/about-ZJU.html"
@@ -39,7 +39,7 @@ function loadheaderexecute(level) {
         var registration = "../Registration.html";
 
 
-        var OrganizeTeam = "../committee.html"
+        var OrganizeTeam = "../team/committee.html"
         var ProgramTeam = "../team/program-committee.html"
         var VenueSchool = "../venue/school-location.html"
         var VenueZJU = "../venue/about-ZJU.html"
