@@ -31,6 +31,14 @@ function loadheaderexecute(level) {
         var asiaPacificTrack = "program/asiaPacificTrack.html"
         var gallery = "program/gallery.html"
 
+        var hwse = "yjjb/hwse.html"
+        var jyrg = "yjjb/jyrg.html"
+        var rjcs1 = "yjjb/rjcs1.html"
+        var rjcs2 = "yjjb/rjcs2.html"
+        var tybg = "yjjb/tybg.html"
+        var yblt = "yjjb/yblt.html"
+        var znrg1 = "yjjb/znrg1.html"
+        var znrg2 = "yjjb/znrg2.html"
 
 
     }
@@ -53,6 +61,15 @@ function loadheaderexecute(level) {
 
         var speakers = "../program/speakers.html"
         var schedule = "../program/schedule.html"
+
+        var hwse = "../yjjb/hwse.html"
+        var jyrg = "../yjjb/jyrg.html"
+        var rjcs1 = "../yjjb/rjcs1.html"
+        var rjcs2 = "../yjjb/rjcs2.html"
+        var tybg = "../yjjb/tybg.html"
+        var yblt = "../yjjb/yblt.html"
+        var znrg1 = "../yjjb/znrg1.html"
+        var znrg2 = "../yjjb/znrg2.html"
 
 
 
@@ -83,12 +100,26 @@ function loadheaderexecute(level) {
     navbarcollapseul.append(schedule_bar)
 
     // add speakers
-    var speakers_bar = $('<li><a href="' + speakers + '">演讲嘉宾</a></li>')
-    navbarcollapseul.append(speakers_bar)
+    /*var speakers_bar = $('<li><a href="' + speakers + '">演讲嘉宾</a></li>')
+    navbarcollapseul.append(speakers_bar)*/
+
+
+    // add yjjb
+    var yjjb_bar=$('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">演讲嘉宾<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+    yjjb_bar.find('ul').append('<li><a href="' + tybg + '">特邀报告</a></li>');
+    yjjb_bar.find('ul').append('<li><a href="' + hwse + '">华为软件工程机遇和挑战</a></li>');
+    yjjb_bar.find('ul').append('<li><a href="'+rjcs1+'">软件测试和程序分析（一）</a></li>');
+    yjjb_bar.find('ul').append('<li><a href="'+znrg1+'">智能化软件工程（一）</a></li>');
+    yjjb_bar.find('ul').append('<li><a href="'+jyrg+'">经验软件工程</a></li>');
+    yjjb_bar.find('ul').append('<li><a href="'+znrg2+'">智能化软件工程（二）</a></li>');
+    yjjb_bar.find('ul').append('<li><a href="'+rjcs2+'">软件测试和程序分析（二）</a></li>');
+    yjjb_bar.find('ul').append('<li><a href="'+yblt+'">优博论坛</a></li>');
+    navbarcollapseul.append(yjjb_bar);
 
     // add committee
     var committee_bar = $('<li><a href="' + OrganizeTeam + '">组织委员会</a></li>')
     navbarcollapseul.append(committee_bar)
+
 
 
 
